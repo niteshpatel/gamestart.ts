@@ -1,0 +1,1 @@
+{"version":3,"file":"Input.js","sources":["Input.ts"],"names":["Input","Input.constructor","Input.justTouched","Input.getX","Input.getY"],"mappings":"AAAA;IAEIA,SAFSA,KAAKA;IAGdC,CAACA;IAEDD,8BAAAA;QACIE,OAAOA,IAAIA,CAACA;IAChBA,CAACA;IAEDF,uBAAAA;QACIG,OAAOA,CAACA,CAACA;IACbA,CAACA;IAEDH,uBAAAA;QACII,OAAOA,CAACA,CAACA;IACbA,CAACA;IACLJ;AAACA,CAAAA,IAAA;AAhBD,sBAgBC;AACD"}
