@@ -3,7 +3,7 @@ export class Input {
     constructor() {
     }
 
-    public justTouched(): bool {
+    public justTouched(): boolean {
         return true;
     }
 

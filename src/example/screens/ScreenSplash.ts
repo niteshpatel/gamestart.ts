@@ -1,14 +1,14 @@
-import GameEx = module("../../npfw/GameEx");
-import ScreenEx = module("../../npfw/ScreenEx");
-import Task = module("../../npfw/tasks/Task");
-import FadeOutTask = module("../../npfw/tasks/transitions/FadeOutTask");
-import SetScreenTask = module("../../npfw/tasks/actions/SetScreenTask");
+import GameEx = require("../../npfw/GameEx");
+import ScreenEx = require("../../npfw/ScreenEx");
+import Task = require("../../npfw/tasks/Task");
+import FadeOutTask = require("../../npfw/tasks/transitions/FadeOutTask");
+import SetScreenTask = require("../../npfw/tasks/actions/SetScreenTask");
 
 export class ScreenSplash extends ScreenEx.ScreenEx {
 
     bg: any;
-    screensLoaded: bool;
-    painted: bool;
+    screensLoaded: boolean;
+    painted: boolean;
 
     constructor(game: GameEx.GameEx) {
         super(game);
@@ -89,7 +89,7 @@ class CreateExTask extends Task.Task {
         }
     }
 
-    public isDone(): bool {
+    public isDone(): boolean {
         return (<ScreenSplash>this.screen).screensLoaded;
     }
 }

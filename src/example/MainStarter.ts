@@ -1,6 +1,6 @@
-import GameEx = module("../npfw/GameEx");
-import ScreenSplash = module("screens/ScreenSplash");
-import ScreenMenu = module("screens/ScreenMenu");
+import GameEx = require("../npfw/GameEx");
+import ScreenSplash = require("screens/ScreenSplash");
+import ScreenMenu = require("screens/ScreenMenu");
 
 export class MainStarter extends GameEx.GameEx {
 

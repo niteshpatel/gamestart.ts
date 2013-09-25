@@ -1,5 +1,5 @@
-import GameEx = module("GameEx");
-import Task = module("tasks/Task");
+import GameEx = require("GameEx");
+import Task = require("tasks/Task");
 
 export class Screen {
 }
@@ -9,7 +9,7 @@ export class ScreenEx extends Screen {
     game: GameEx.GameEx;
     tasks: any;
     tasksQ: any;
-    suspended: bool;
+    suspended: boolean;
 
     constructor(game: GameEx.GameEx) {
         console.log("constructor");

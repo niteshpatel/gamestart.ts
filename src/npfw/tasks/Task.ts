@@ -1,5 +1,5 @@
-import GameEx = module("../GameEx");
-import ScreenEx = module("../ScreenEx");
+import GameEx = require("../GameEx");
+import ScreenEx = require("../ScreenEx");
 
 export class Task {
 
@@ -28,7 +28,7 @@ export class Task {
         return 0;
     }
 
-    public isDone(): bool {
+    public isDone(): boolean {
         return false;
     }
 }

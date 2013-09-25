@@ -1,13 +1,13 @@
-import ScreenEx = module("../../../npfw/ScreenEx");
-import Task = module("../../../npfw/tasks/Task");
-import Graphics = module("../../../nplib/Graphics");
-import Input = module("../../../nplib/Input");
+import ScreenEx = require("../../../npfw/ScreenEx");
+import Task = require("../../../npfw/tasks/Task");
+import Graphics = require("../../../nplib/Graphics");
+import Input = require("../../../nplib/Input");
 
 export class FadeOutTask extends Task.Task {
 
     paintIndex: number;
     task: any;
-    done: bool;
+    done: boolean;
     alpha: number;
 
     constructor(screen: ScreenEx.ScreenEx, paintIndex: number, task: Task.Task) {
@@ -29,7 +29,7 @@ export class FadeOutTask extends Task.Task {
         }
     }
 
-    public isDone(): bool {
+    public isDone(): boolean {
         return this.task.isDone();
     }
 

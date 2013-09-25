@@ -1,11 +1,11 @@
-import ScreenEx = module("../../../npfw/ScreenEx");
-import Task = module("../../../npfw/tasks/Task");
+import ScreenEx = require("../../../npfw/ScreenEx");
+import Task = require("../../../npfw/tasks/Task");
 
 export class SetScreenTask extends Task.Task {
 
     screenId: number;
     delay: number;
-    done: bool;
+    done: boolean;
 
     constructor(screen: ScreenEx.ScreenEx, screenId: number, delay: number) {
         super(screen);
@@ -22,7 +22,7 @@ export class SetScreenTask extends Task.Task {
         }
     }
 
-    public isDone(): bool {
+    public isDone(): boolean {
         return this.done;
     }
 }

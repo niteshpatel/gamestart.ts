@@ -1,12 +1,12 @@
-import GameEx = module("../../npfw/GameEx");
-import ScreenEx = module("../../npfw/ScreenEx");
-import Task = module("../../npfw/tasks/Task");
+import GameEx = require("../../npfw/GameEx");
+import ScreenEx = require("../../npfw/ScreenEx");
+import Task = require("../../npfw/tasks/Task");
 
 export class ScreenMenu extends ScreenEx.ScreenEx {
 
     bg: any;
-    screensLoaded: bool;
-    painted: bool;
+    screensLoaded: boolean;
+    painted: boolean;
 
     constructor(game: GameEx.GameEx) {
         super(game);

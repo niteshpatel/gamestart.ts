@@ -1,6 +1,6 @@
-import ScreenEx = module("ScreenEx");
-import Graphics = module("../nplib/Graphics");
-import Input = module("../nplib/Input");
+import ScreenEx = require("ScreenEx");
+import Graphics = require("../nplib/Graphics");
+import Input = require("../nplib/Input");
 
 export class Game {
 
